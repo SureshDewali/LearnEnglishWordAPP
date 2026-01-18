@@ -1,0 +1,16 @@
+{
+  "name": "Chandrama English",
+  "short_name": "Chandrama",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#f59e0b",
+  "description": "Learn English Daily with Chandrama Academy",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3254/3254395.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
