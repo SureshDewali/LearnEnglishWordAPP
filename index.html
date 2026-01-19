@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="monetag" content="adb290a03de905f592bbeb7d311d1f9d">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     <title>Chandrama - English Elite</title>
@@ -9,26 +8,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sql.js/1.12.0/sql-wasm.js"></script>
+    
+    <!-- Monetag Vignette Script -->
+    <script>(function(s){s.dataset.zone='10486685',s.src='https://gizokraijaw.net/vignette.min.js'})([document.documentElement, document.body].filter(Boolean).pop().appendChild(document.createElement('script')))</script>
+
     <style>
         :root {
-            /* Refined botanical glass palette - deeper green tones */
-            --glass-bg: rgba(6, 35, 12, 0.35);
+            --glass-bg: rgba(6, 35, 12, 0.4);
             --glass-border: rgba(255, 255, 255, 0.15);
         }
 
         body {
             font-family: 'Inter', sans-serif !important;
-            /* 🌿 CALM GREEN FOCUS THEME - Fixes 'Washed Out' feel */
-            background-color: #06230c; /* Deep Green Fallback for instant load visibility */
+            background-color: #06230c; /* High-Visibility Fallback */
+            /* 🌿 CALM GREEN FOREST THEME */
             background-image: 
-                linear-gradient(rgba(6, 35, 12, 0.65), rgba(4, 20, 8, 0.85)), 
-                url('https://images.unsplash.com/photo-1491843331069-32dd02ca7799?q=80&w=2070&auto=format&fit=crop');
+                linear-gradient(rgba(6, 35, 12, 0.7), rgba(4, 20, 8, 0.9)), 
+                url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=2070&auto=format&fit=crop');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
-            background-attachment: scroll; /* Fix for mobile browser disappearing backgrounds */
+            background-attachment: scroll; /* Mobile compatibility fix */
             
-            /* Mobile Viewport Fix */
+            /* Stable Mobile Viewport height */
             min-height: 100svh;
             height: 100svh;
             
@@ -36,21 +38,20 @@
             margin: 0;
             user-select: none;
             -webkit-tap-highlight-color: transparent;
-            overflow: hidden; /* Strict One-Screen Navigation */
+            overflow: hidden;
         }
 
         * { font-family: 'Inter', sans-serif !important; box-sizing: border-box; }
 
-        /* Enhanced "Forest Shadow" for perfect white text readability on green foliage */
+        /* Strong contrast text for forest background */
         .text-readable {
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.95), 0px 0px 10px rgba(0,0,0,0.5);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9), 0px 0px 8px rgba(0,0,0,0.4);
         }
 
         .slogan-font {
             font-family: 'Playfair Display', serif !important;
         }
 
-        /* Slogan Gradient: Soft Gray to Vibrant Emerald */
         .slogan-gradient {
             background: linear-gradient(135deg, #e2e8f0 0%, #34d399 100%);
             -webkit-background-clip: text;
@@ -67,6 +68,19 @@
             border-radius: 32px;
         }
 
+        /* UI POSITIONING & CLIPPING FIXES */
+        .card-shift-up {
+            transform: translateY(-25px);
+        }
+
+        .sentence-box {
+            padding-bottom: 60px; /* Clipping Protection */
+            min-height: fit-content;
+            overflow-wrap: break-word; /* Long text protection */
+            word-wrap: break-word;
+            hyphens: auto;
+        }
+
         .btn-gold-elite {
             background: linear-gradient(135deg, #10b981 0%, #064e3b 100%);
             color: #fff;
@@ -75,7 +89,7 @@
         }
 
         .btn-skeuo-elite {
-            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.05);
+            box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.6), inset 0 1px 0 0 rgba(255, 255, 255, 0.1);
             border-radius: 24px;
             transition: transform 0.1s ease, box-shadow 0.1s ease;
         }
@@ -106,7 +120,7 @@
             width: 100%;
             position: fixed;
             overflow: hidden;
-            background-color: #06230c; /* Mirror body fallback */
+            background-color: #06230c;
         }
     </style>
 <script type="importmap">
